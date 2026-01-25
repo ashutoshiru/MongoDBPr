@@ -1,4 +1,4 @@
-/* Reset */
+/* ================= RESET ================= */
 * {
   margin: 0;
   padding: 0;
@@ -6,41 +6,44 @@
   font-family: "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
+/* ================= BODY ================= */
 body {
   background-color: #e5ddd5; /* WhatsApp background */
   padding: 20px;
 }
 
-/* Page title */
+/* ================= TITLE ================= */
 h3 {
   text-align: center;
   margin-bottom: 20px;
   color: #075e54;
+  font-weight: 600;
 }
 
-/* Chat container */
+/* ================= CHAT CARD ================= */
 .chat {
   max-width: 600px;
-  margin: 0 auto 15px auto;
-  padding: 10px;
-  background-color: #d8d0c9;
-  border-radius: 16px;
+  margin: 0 auto 12px auto;
+  padding: 12px 14px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 /* From / To text */
 .chat > p {
   font-size: 12px;
   color: #555;
-  margin-bottom: 4px;   
+  margin-bottom: 4px;
 }
 
-/* Message bubble */
+/* ================= MESSAGE BUBBLE ================= */
 .msg-box {
   background-color: #dcf8c6; /* WhatsApp green */
   padding: 10px 14px;
-  border-radius: 8px;
+  border-radius: 8px 8px 8px 0;
   max-width: 80%;
-  margin: 6px 0;
+  margin: 8px 0;
   position: relative;
 }
 
@@ -51,9 +54,60 @@ h3 {
   line-height: 1.4;
 }
 
-/* Separator */
+/* Message tail */
+.msg-box::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -6px;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-right: 6px solid #dcf8c6;
+  border-bottom: 6px solid transparent;
+}
+
+/* ================= SEPARATOR ================= */
 hr {
   border: none;
   border-top: 1px solid #ddd;
   margin-top: 10px;
+}
+
+/* ================= FLOATING + BUTTON ================= */
+.new-chat-form {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+
+.new-chat-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  background-color: #25d366;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1;
+  cursor: pointer;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.new-chat-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+}
+
+.new-chat-btn:active {
+  transform: scale(0.95);
 }

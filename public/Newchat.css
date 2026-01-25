@@ -1,0 +1,79 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  background-color: #e5ddd5;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== FORM CARD ===== */
+.chat-container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== TITLE ===== */
+.chat-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #075e54;
+}
+
+/* ===== INPUTS ===== */
+.chat-container input,
+.chat-container textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+}
+
+.chat-container textarea {
+  resize: none;
+  height: 90px;
+}
+
+/* Focus effect */
+.chat-container input:focus,
+.chat-container textarea:focus {
+  border-color: #25d366;
+}
+
+/* ===== BUTTON ===== */
+.chat-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #25d366;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.chat-container button:hover {
+  background-color: #1ebd5a;
+  transform: scale(1.02);
+}
+
+.chat-container button:active {
+  transform: scale(0.98);
+}
