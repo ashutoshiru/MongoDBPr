@@ -111,3 +111,39 @@ hr {
 .new-chat-btn:active {
   transform: scale(0.95);
 }
+
+
+/* ================= EDIT BUTTON ================= */
+
+/* msg-box ko relative banao */
+.msg-box {
+  position: relative;
+}
+
+/* Edit button right side */
+.edit-btn {
+  position: absolute;
+  right: 8px;
+  bottom: 6px;
+
+  background-color: transparent;
+  border: none;
+  color: #075e54;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.edit-btn:hover {
+  background-color: rgba(7, 94, 84, 0.15);
+}
+
+.edit-btn:active {
+  transform: scale(0.95);
+}
+
+

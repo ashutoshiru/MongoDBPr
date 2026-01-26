@@ -22,8 +22,15 @@
             <p>
                 <%= chat.message %>
             </p>
+            <form action="/chats/<%= chat._id %>/edit" method="GET" style="display:inline;">
+            <button class="edit-btn">Edit</button>
+         </form>
         </div>
-        <p>Recevied By :<i> <%= chat.to %>  </i>    
+        <p><%= chat.created_at.toString().split(" ")[4] %></p>
+        
+        <p><%= chat.created_at.toString().split(" ").slice(0, 4).join("-") %></p>
+        <p>Recevied By :<i> <%= chat.to %>  </i> 
+           
         </p>
     </div>
     <hr/>
