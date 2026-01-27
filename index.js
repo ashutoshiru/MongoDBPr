@@ -74,5 +74,3 @@ app.post("/chats/:id", async (req, res) => {
     });
     res.redirect("/chats");
 });
-
-
