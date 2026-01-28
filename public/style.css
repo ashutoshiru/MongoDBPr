@@ -8,7 +8,7 @@
 
 /* ================= BODY ================= */
 body {
-  background-color: #e5ddd5; /* WhatsApp background */
+  background-color: #e6ded6; /* WhatsApp background */
   padding: 20px;
 }
 
@@ -123,8 +123,8 @@ hr {
 /* Edit button right side */
 .edit-btn {
   position: absolute;
-  right: 8px;
-  bottom: 6px;
+  right: 2%;
+  bottom: 20%;
 
   background-color: transparent;
   border: none;
@@ -147,4 +147,31 @@ hr {
   transform: scale(0.95);
 }
 
+
+.delete-btn {
+  position: relative;
+  left: 92%;
+  bottom: 2%;
+
+  background-color: transparent;
+  border: none;
+  background-color: #e6ded6;
+  color: #075e54;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.delete-btn:hover { 
+  
+  background-color: rgba(7, 94, 84, 0.15);
+}
+
+.delete-btn:active {
+  transform: scale(0.95);
+}
 
