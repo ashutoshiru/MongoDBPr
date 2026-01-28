@@ -138,7 +138,8 @@ hr {
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.edit-btn:hover {
+.edit-btn:hover { 
+  
   background-color: rgba(7, 94, 84, 0.15);
 }
 
