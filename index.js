@@ -74,3 +74,10 @@ app.post("/chats/:id", async (req, res) => {
     });
     res.redirect("/chats");
 });
+
+// delete chat route
+app.post("/chats/:id/delete", async (req, res) => {
+    let {id} = req.params;
+    await Chat.findByIdAndDelete(id);
+    res.redirect("/chats");
+});
