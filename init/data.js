@@ -1005,7 +1005,7 @@ const sampleChats = [
 { from: "Kiran", to: "Manoj", message: "rajma chawal", created_at: "2026-01-29T18:11:40.984+00:00" },
 { from: "Sameer", to: "Tanya", message: "movie plan set?", created_at: "2026-01-29T18:12:15.985+00:00" },
 { from: "Tanya", to: "Sameer", message: "yes, 7 PM show", created_at: "2026-01-29T18:12:45.986+00:00" },
-{ from: "Vikram", to: "Sagar", message: "cricket match?", created_at: "2026-01-29T18:13:15.987+00:00" },
+{ from: "Vikram", to: "Sagar", message: "cricket match?", created_at: "2026-01-29T18:13:15.987+00:00" }, 
 { from: "Sagar", to: "Vikram", message: "morning 8 baje", created_at: "2026-01-29T18:13:45.988+00:00" },
 { from: "Rahul", to: "Pooja", message: "trip was awesome", created_at: "2026-01-29T18:14:15.989+00:00" },
 { from: "Pooja", to: "Rahul", message: "next time Manali", created_at: "2026-01-29T18:14:45.990+00:00" },
