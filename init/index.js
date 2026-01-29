@@ -16,7 +16,7 @@ async function main() {
 const initDB = async () => {
     await Chat.deleteMany({});
     await Chat.insertMany(initData.data);
-    console.log("DB Initialized with Data"); 
+    console.log("DB Initialized with Data");  
 }
 
 initDB();
