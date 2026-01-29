@@ -50,7 +50,7 @@ let allChat = [
     }
 ]
 
-Chat.insertMany(allChat).then((result) => {
+Chat.insertMany(allChat).then((result) => { 
     console.log("All Chats saved successfully:", result); 
 })
 
