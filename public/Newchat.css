@@ -72,7 +72,7 @@ body {
 .chat-container button:hover {
   background-color: #1ebd5a;
   transform: scale(1.02);
-}
+} 
 
 .chat-container button:active {
   transform: scale(0.98);
