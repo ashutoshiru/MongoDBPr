@@ -72,7 +72,7 @@ app.get("/chats/:id/edit", async (req, res) => {
 });
 
 //update chat route
-app.post("/chats/:id", async (req, res) => {
+app.post("/chats/:id", async (req, res) => { 
     let {id} = req.params;
     let {msg} = req.body;
     await Chat.findByIdAndUpdate(id, {
