@@ -82,7 +82,7 @@ body {
   transform: scale(1.02);
 }
 
-.chat-container button:active { 
+.chat-container button:active {  
   transform: scale(0.98);
 } 
 
