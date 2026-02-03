@@ -9,7 +9,7 @@
   "author": "Ashutosh Kumar",
   "license": "ISC",
   "description": "",
-  "dependencies": {
+  "dependencies": { 
     "ejs": "^4.0.1",
     "express": "^5.2.1",
     "method-override": "^3.0.0", 
